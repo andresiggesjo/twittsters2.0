@@ -1,0 +1,431 @@
+@CHARSET "UTF-8";
+
+
+@import url(http: //fonts.googleapis.com/css?family=Raleway);
+@import url(http://fonts.googleapis.com/css?family=Arvo);
+
+* {
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	outline: none;
+}
+body {
+	background: url(../images/bg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.profilepic {
+    width: 217px;
+}
+.login-form {
+	margin: 100px auto;
+	max-width: 400px;
+    font: 16px/2em Lato, serif;
+}
+
+.profile-form{
+    margin: 100px auto;
+    max-width: 1200px;
+    font: 16px/2em Lato, serif;
+    background: #1e1e1e;
+    height: 600px;
+    border-radius: 25px;
+    width: 800px;
+    
+}
+.public-form{
+       margin: 100px auto;
+    max-width: 1200px;
+    font: 16px/2em Lato, serif;
+    background: #1e1e1e;
+    height: 500px;
+    border-radius: 25px;
+    width: 300px;
+    
+}
+.feed{
+    
+    
+}
+
+
+
+/*=======================================
+TWEET FEED STYLES
+==================================================*/
+.twt-wrapper .panel-body {
+    max-height:280px;
+    overflow:auto;
+}
+.twt-wrapper .media-list .media img {
+    width:64px;
+    height:64px;
+    border:2px solid #e5e7e8;
+}
+.twt-wrapper .media-list .media {
+    border-bottom:1px dashed #efefef;
+    margin-bottom:25px;
+}
+
+form[role=login] {
+	background: #303030;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+	form[role=login] > section {
+		background: #1e1e1e;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		-webkit-border-top-left-radius: 10px;
+        -moz-border-radius-topleft: 10px;
+        -webkit-border-top-right-radius: 10px;
+        -moz-border-radius-topright: 10px;
+	}
+	form[role=login] h2 {
+		font-size: 36px;
+		color: #fff;
+		margin-bottom: 1em;
+	}
+	form[role=login] > section input {
+		color: #c1c4c5;
+		background: #fafafa;
+		border: none;
+		border: 1px solid #EDEDED;
+	}
+	form[role=login] > section input,
+	form[role=login] button {
+		font-size: 16px;
+		margin: 16px 0;
+	}
+	form[role=login] button {
+		color: #fff;
+		font-weight: normal;
+		font-size: 17px;
+		text-align: left;
+		text-shadow: 1px 1px 1px #aaa;
+		background: #b4f012;
+	}
+	form[role=login] button:hover {
+		color: #fff;
+		background: #93C50D;
+	}
+	form[role=login] button:active {
+		color: #fff;
+	}
+	form[role=login] button:focus {
+		color: #fff;
+	}
+	form[role=login] > div {
+		font-size: 16px;
+		color: #ededed;
+	}
+		form[role=login] > div a {
+			color: #3487d4;
+		}
+		
+.form-outer {
+	padding: 20px 26px;
+}
+
+.form-links {
+	text-align: center;
+	color: #c8c8c8;
+	margin-top: 1em;
+	margin-bottom: 50px;
+}
+	.form-links a, .form-links a:hover {
+		color: #fff;
+		text-decoration: underline;
+	}
+
+
+
+p {
+    padding: 10px 0 0 0;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-family: arvo;
+}
+
+label {
+    padding: 200px 0 0 0;
+}
+
+.feed {
+    width: 550px;
+    height: 55px;
+    float: right;
+}
+
+.forms {
+    float: right;
+}
+
+.form-control {
+  display:block;
+  width: 400px;
+  height: 34px;
+  margin-top: 25px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  margin-left: 0;    
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+#main {
+    width: 20%;
+    padding: 120px;
+    margin: auto;
+    font-family: arvo;
+}
+
+.photo-inner {
+  border: 2px solid;
+    width: 32%;
+    padding: 10px;
+    background-color: cornflowerblue;
+    margin-top: 10px;
+    border-radius: 12px;
+}
+
+h2 {
+    text-align: center;
+    font-family: arvo;
+    color: cornflowerblue;
+    border-radius: 10px 10px 0 0;
+    margin: -10px -40px;
+    padding: 15px;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    margin: 10px -40px;
+    margin-bottom: 30px
+}
+
+.underfoto{
+        width: 325px;
+    color:white;
+    
+    
+}
+
+#public {
+    background-color: cornflowerblue;
+    color: #fff;
+    margin-top: 75px;
+    border: 2px solid;
+    border-color: aliceblue;
+    padding: 10px;
+    font-size: 15px;
+    width: 80%;
+    height: 50%;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10%;
+}
+
+
+
+input[type=text],
+input[type=password] {
+    width: 95%;
+    padding: 10px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+    font-size: 16px;
+    font-family: arvo;
+}
+input[name=submit]{
+ width: 100px;
+    background-color: cornflowerblue;
+    color: #fff;
+    margin-top: 8px;
+    border: 2px solid;
+    border-color: cornflowerblue;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 2px;
+    margin-right: 100px;   
+    
+}
+input[name=tweettext]{
+width: 100%;
+    background-color: cornflowerblue;
+    color: #fff;
+    margin-bottom:10px;
+    border: 2px solid;
+    border-color: cornflowerblue;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 0;
+    
+    
+}
+
+input[value=Login], input[value=Signup] {
+    width: 100%;
+    background-color: cornflowerblue;
+    color: #fff;
+    margin-top: 10px;
+    border: 2px solid;
+    border-color: cornflowerblue;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+input[value=Follow] {
+ width: 100px;
+    background-color: cornflowerblue;
+    color: #fff;
+    margin-top: 8px;
+    border: 2px solid;
+    border-color: cornflowerblue;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 2px;
+    margin-right: 100px;
+}
+#unfollows .followButton {
+ width: 100px;
+    background-color: cornflowerblue;
+    color: #fff;
+    margin-top: 8px;
+    border: 2px solid;
+    border-color: cornflowerblue;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 2px;
+    margin-right: 100px;
+}
+
+input[type=tweet] {
+    width: 25%;
+    background-color: cornflowerblue;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 10px;
+    border: 2px solid;
+    border-color: cornflowerblue;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+/*
+#logout {
+float: right;
+width:10%;
+background-color:cornflowerblue;
+color: aliceblue;
+margin-top:10px;
+border:2px solid;
+border-color: cornflowerblue;
+padding:10px;
+font-size:20px;
+cursor:pointer;
+border-radius:5px;
+
+}
+*/
+
+a {
+    font-family: arvo;
+    margin-left 25px;
+}
+
+.knappar{
+    margin-left: 20px;
+    
+}
+
+#welcome {
+    text-align: center;
+    margin-left: 300px;
+    font-family: arvo;
+    color: aliceblue;
+    font-size: 25px
+}
+
+#logout {
+    position: relative;
+    float: center;
+    background-color: cornflowerblue;
+    color: #fff;
+    margin-top: 10px;
+    border: 2px solid;
+    border-color: aliceblue;
+    padding: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#names {
+background-color: cornflowerblue;
+    width: 40%;
+    height: 30px;
+    margin-top: 10px;
+    text-align: center;
+    max-height: 6%;
+    margin-left: 25px;
+    border-radius: 5px;
+    font-family: arvo;
+    color: white;
+
+}
+#names a{
+    color:white;
+    text-decoration: none;
+}
+.knappar a{
+    color:white;
+}
+
+#follows {
+
+      margin-top: -43px;
+    text-align: center;
+    max-height: 6%;
+    margin-right: 480px;
+    padding: 5px;
+    width: 10%;
+}
+#unfollows {
+
+       margin-top: -43px;
+    text-align: center;
+    max-height: 6%;
+    /* margin-right: 480px; */
+    margin-right: -60px;
+    padding: 5px;
+}
