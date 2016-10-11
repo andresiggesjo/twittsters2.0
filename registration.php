@@ -15,16 +15,16 @@ if (isset($_POST['signup'])) {
     if (empty($_POST['username']) || empty($_POST['password'])) {
         $error = "Username or Password is invalid";
     } else {
-        $username = $_POST['username'];
-        $password = md5($_POST['password']);
-        $confirmpassword = md5($_POST['password1']);
-
+        $connection = mysqli_connect("localhost", "root", "root", "company");
+        $username = mysqli_real_escape_string($connection,$_POST['username']);
+        $password = mysqli_real_escape_string($connection,md5($_POST['password']));
+        $confirmpassword = mysqli_real_escape_string($connection,md5($_POST['password1']));
+        $hashAndSalt = password_hash($password,PASSWORD_BCRYPT);
         if (strlen($username) > 10) {
             $errorss = 'Username is longer than 10 chars';
         } else if($password != $confirmpassword){
             echo "The passwords doesnt match";
         } else{
-            $connection = mysqli_connect("localhost", "root", "root", "company");
             if (!$connection) {
                 die("Connection failed: " . mysqli_connect_error());
             }
@@ -33,7 +33,7 @@ if (isset($_POST['signup'])) {
             if ($num_rows == 0) {
                 //Create new user
                 $sql = "INSERT INTO login (username, password) VALUES 
-                ('$username' , '$password')";
+                ('$username' , '$hashAndSalt')";
 
                 if (mysqli_query($connection, $sql)) {
 

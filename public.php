@@ -52,7 +52,7 @@ $following = getFollowersByID($userid);
             ?>
                 </div>
                     <div id="names">
-                        <?php echo "<a href='http://{$value['username']}'>{$value['username']}</a><br/>"; ?>
+                        <?php echo "<a href='otherprofile.php?poster={$value['username']}'>{$value['username']}</a><br/>"; ?>
                     </div>
                     <?php
                     $buttonText = in_array($value['id'], $following) ? "unfollow" : "follow";
